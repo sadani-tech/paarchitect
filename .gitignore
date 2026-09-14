@@ -1,0 +1,58 @@
+# ——— Dependencies ———
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ——— Hasil build ———
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# ——— Cache & log ———
+.turbo/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ——— Environment ———
+.env
+.env.*
+!.env.example
+
+# ——— Platform deploy ———
+.vercel/
+.netlify/
+.wrangler/
+
+# ——— Editor & OS ———
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ——— Pengujian ———
+coverage/
+*.lcov
+
+# ——— CATATAN: yang sengaja TIDAK diabaikan ———
+# public/projects/       -> WebP hasil `npm run images`. Ikut di-commit supaya
+#                           `next build` jalan di host mana pun tanpa perlu
+#                           menjalankan pipeline gambar (butuh sharp) lebih dulu.
+# src/data/generated/     -> dimensi + placeholder blur; diimpor oleh komponen,
+#                           build gagal tanpa berkas ini.
+# portofolio/             -> foto sumber, dipakai `npm run images` saat menambah
+#                           atau menata ulang proyek.

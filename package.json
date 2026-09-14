@@ -1,0 +1,35 @@
+{
+  "name": "pranaja-ashari",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PRANAJA ASHARI — static architecture studio website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "images": "node scripts/build-images.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "motion": "^13.2.0",
+    "next": "^16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.186.0",
+    "eslint": "^9.26.0",
+    "eslint-config-next": "^16.3.5",
+    "sharp": "^0.34.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.8.3"
+  }
+}
